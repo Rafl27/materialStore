@@ -43,10 +43,12 @@ app.post('/createitem', (request, response) => {
     const price = request.body.price
     const description = request.body.description
     const image = request.body.image
+    const date = request.body.date
+    const seller = request.body.seller
 
     // const createItemQuery = `INSERT INTO store.storeitems (name, price, description, imageUrl) values (${name}, ${price}, ${description}, ${image})`
 
-    db.query('INSERT INTO store.storeitems (name, price, description, imageUrl) values (?, ?, ?, ?)', [name, price, description, image], (error, result) => {
+    db.query('INSERT INTO store.storeitems (name, price, description, imageUrl, dateAdded, seller) values (?, ?, ?, ?, ?, ?)', [name, price, description, image, date, seller], (error, result) => {
         if(error){
             console.log(error)
             response.send(error)

@@ -4,6 +4,7 @@ import axios from 'axios'
 
 export const ItemInput = () => {
 
+    let date = new Date()
     const [itemName, setItemName] = useState('')
     const [itemPrice, setItemPrice] = useState('')
     const [itemDescription, setItemDescription] = useState('')
@@ -15,7 +16,9 @@ export const ItemInput = () => {
             name: itemName,
             price: itemPrice,
             description: itemDescription,
-            image: itemImage
+            image: itemImage,
+            date: `${date.getDate()}/${date.getUTCMonth()}/${date.getFullYear()}`,
+            seller: `${localStorage.getItem("firstName")} ${localStorage.getItem("lastName")}`
         }
         )
         window.location.reload()

@@ -7,12 +7,13 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
 export default function ImgMediaCard(props) {
+  let date = new Date()
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
         component="img"
         alt={"Item name: " + props.name}
-        height="200"
+        height="250"
         image={props.imageUrl}
       />
       <CardContent>
@@ -23,7 +24,11 @@ export default function ImgMediaCard(props) {
           {props.description}
         </Typography>
         <Typography variant="body2" color="blue">
-          Seller: {localStorage.getItem("firstName")}
+          Seller: {props.seller}
+        </Typography>
+        <Typography variant="body2" color="blue">
+         Date posted: {props.date}
+
         </Typography>
       </CardContent>
       <CardActions>

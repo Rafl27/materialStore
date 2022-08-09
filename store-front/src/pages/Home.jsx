@@ -27,7 +27,10 @@ export const Home = () => {
                                     name={item.name}
                                     price={item.price}
                                     imageUrl={item.imageUrl}
-                                    description={item.description} />
+                                    description={item.description}
+                                    date={item.dateAdded}
+                                    seller={item.seller}
+                                    />
                             </div>
                         )
                     })}
