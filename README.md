@@ -10,6 +10,7 @@ In this project I bring together everything I learned with my previous projets, 
 
 Main Page
 ![Screenshot](previews/materialHomePreview2.png)
+(It's not centered because there are more items bellow)
 
 Different Logged in Users
 ![Screenshot](previews/materialDifferentUsersPreview.png)
