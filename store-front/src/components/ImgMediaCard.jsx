@@ -22,6 +22,9 @@ export default function ImgMediaCard(props) {
         <Typography variant="body2" color="text.secondary">
           {props.description}
         </Typography>
+        <Typography variant="body2" color="blue">
+          Seller: {localStorage.getItem("firstName")}
+        </Typography>
       </CardContent>
       <CardActions>
         <Button size="small">Add to cart</Button>

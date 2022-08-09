@@ -46,19 +46,19 @@ export default function SignInSide() {
                 password: passwordInput
             }
         ).then((response) => {
-            if(response.data.message){
+            if (response.data.message) {
                 alert("No user found with these credentials.")
             }
-            else if (response.data[0].id){
-                setLoggedUser(response.data[0])
-                console.log(loggedUser)
-                console.log(loggedUser.email)
-                console.log("Found someone.")
+            else if (response.data[0].id) {
+                // console.log("Found someone.")
+                // setLoggedUser(response.data[0])
+                // console.log(loggedUser)
+                // console.log(loggedUser.email)
+                localStorage.setItem("firstName", response.data[0].firstName)
+                localStorage.setItem("lastName", response.data[0].lastName)
+                localStorage.setItem("email", response.data[0].email)
                 window.location.replace('http://127.0.0.1:5173/home')
-                
             }
-            // 
-            //descobrir como exportar o usuário logado
         })
     }
 
