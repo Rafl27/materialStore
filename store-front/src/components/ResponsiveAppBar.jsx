@@ -15,9 +15,10 @@ import AdbIcon from '@mui/icons-material/Adb';
 import './ResponsiveAppBar.css'
 
 const pages = ['>Products'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+
 
 const ResponsiveAppBar = (props) => {
+  const settings = [`Full Name: ${props.username} ${props.lastname}`, `Email: ${props.email}`, 'Logout'];
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 

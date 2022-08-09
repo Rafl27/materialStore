@@ -6,6 +6,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { formatCurrency } from '../utilities/formatCurrency';
+import './ImgMediaCard.css'
 
 export default function ImgMediaCard(props) {
   let date = new Date()
@@ -24,18 +25,20 @@ export default function ImgMediaCard(props) {
         <Typography variant="body2" color="text.secondary">
           {props.description}
         </Typography>
-        <Typography variant="body2" color="blue">
+        <div className='seller-text'>
+        <Typography  variant="body2" color="blue">
           Seller: {props.seller}
         </Typography>
         <Typography variant="body2" color="blue">
-         Date posted: {props.date}
-
+         Added: {props.date}
         </Typography>
+        </div>
+        
       </CardContent>
       <CardActions>
-        <Button size="small">Add to cart</Button>
-        <Button size="small">{formatCurrency(props.price)}</Button>
-        <Button size="small">More</Button> {/*open a modal with this button*/}
+        {/* <Button size="small">Add to cart</Button> */}
+        <Button className='price-text' size="small">{formatCurrency(props.price)}</Button>
+        {/* <Button size="small">More</Button> open a modal with this button */}
       </CardActions>
     </Card>
   );

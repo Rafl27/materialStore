@@ -47,7 +47,7 @@ export const Home = () => {
     return (
         <>
 
-            <ResponsiveAppBar username={localStorage.getItem("firstName")} />
+            <ResponsiveAppBar username={localStorage.getItem("firstName")} lastname={localStorage.getItem("lastName")} email={localStorage.getItem("email")} />
             <div className="sell-button">
                 {/* <Button className="add-item-button btn ">Sell your own product here!</Button> */}
                 <Button variant="contained" className="add-item-button" onClick={handleOpenModal}>Add your product here!</Button>
