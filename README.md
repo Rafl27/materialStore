@@ -24,5 +24,5 @@ Login Page
 ![Screenshot](materialLoginPreview.png)
 
 Sign Up Page
-![Screenshot](materialLoginPreview.png)
+![Screenshot](materialSignUpPreview.png)
 
