@@ -16,3 +16,13 @@ Different Logged in Users
 
 DataBase
 ![Screenshot](dataBaseMaterialStore.png)
+
+Adding new Products Modal
+![Screenshot](materialAddProductPreview.png)
+
+Login Page
+![Screenshot](materialLoginPreview.png)
+
+Sign Up Page
+![Screenshot](materialLoginPreview.png)
+materialSignUpPreview.png
