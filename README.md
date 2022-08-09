@@ -12,17 +12,17 @@ Main Page
 ![Screenshot](previews/materialHomePreview2.png)
 
 Different Logged in Users
-![Screenshot](materialDifferentUsersPreview.png)
+![Screenshot](previews/materialDifferentUsersPreview.png)
 
 DataBase
-![Screenshot](dataBaseMaterialStore.png)
+![Screenshot](previews/dataBaseMaterialStore.png)
 
 Adding new Products Modal
-![Screenshot](materialAddProductPreview.png)
+![Screenshot](previews/materialAddProductPreview.png)
 
 Login Page
-![Screenshot](materialLoginPreview.png)
+![Screenshot](previews/materialLoginPreview.png)
 
 Sign Up Page
-![Screenshot](materialSignUpPreview.png)
+![Screenshot](previews/materialSignUpPreview.png)
 
