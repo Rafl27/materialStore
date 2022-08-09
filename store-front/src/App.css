@@ -1,0 +1,15 @@
+.items {
+    display: flex;
+    padding: 20px;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+
+.item {
+    margin: 20px;
+}
+
+.inputitems {
+    display: flex;
+    justify-content: space-between;
+}

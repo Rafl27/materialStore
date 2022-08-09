@@ -1,0 +1,39 @@
+.input-card {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: 280px;
+    border-radius: 20px;
+    color: black;
+    
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+}
+
+.title {
+    font-family: monospace;
+    text-align: center;
+    font-size: 15px;
+}
+
+label {
+    font-family: monospace;
+    font-size: 15px;
+    padding: 5px;
+}
+
+input {
+    height: 25px;
+    font-size: 15px;
+    padding-left: 10px;
+}
+
