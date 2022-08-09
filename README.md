@@ -25,4 +25,4 @@ Login Page
 
 Sign Up Page
 ![Screenshot](materialLoginPreview.png)
-materialSignUpPreview.png
+
