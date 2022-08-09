@@ -1,4 +1,4 @@
-# materialStore
+# 🔷🔷💸💸materialStore💸💸🔷🔷
 
 •A simple store where you can create your account/login and browse products added by other users and also add your own.
 
