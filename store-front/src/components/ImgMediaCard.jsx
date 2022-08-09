@@ -5,6 +5,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import { formatCurrency } from '../utilities/formatCurrency';
 
 export default function ImgMediaCard(props) {
   let date = new Date()
@@ -33,7 +34,7 @@ export default function ImgMediaCard(props) {
       </CardContent>
       <CardActions>
         <Button size="small">Add to cart</Button>
-        <Button size="small">{props.price}</Button>
+        <Button size="small">{formatCurrency(props.price)}</Button>
         <Button size="small">More</Button> {/*open a modal with this button*/}
       </CardActions>
     </Card>

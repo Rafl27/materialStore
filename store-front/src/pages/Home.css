@@ -1,0 +1,12 @@
+.add-item-button{
+    color: black;
+    font-family: monospace;
+    padding-top: 20px;
+}
+
+.sell-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}

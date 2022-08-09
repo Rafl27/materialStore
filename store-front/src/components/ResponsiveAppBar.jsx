@@ -12,11 +12,12 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
+import './ResponsiveAppBar.css'
 
-const pages = ['Products', 'Pricing', 'Blog'];
+const pages = ['>Products'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
-const ResponsiveAppBar = () => {
+const ResponsiveAppBar = (props) => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
@@ -89,7 +90,7 @@ const ResponsiveAppBar = () => {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                  <Typography textAlign="center" className='products-button'>{page}</Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -127,9 +128,12 @@ const ResponsiveAppBar = () => {
 
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
+              
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="" /> 
+                <p className='welcome-message'>Welcome {props.username}</p>
+                <Avatar alt="Remy Sharp" src={`https://avatars.dicebear.com/api/bottts/${props.username}.svg`}/> 
                 {/* aqui o meu avatar onde devo usar a api de avatar muito show  */}
+                
               </IconButton>
             </Tooltip>
             <Menu
