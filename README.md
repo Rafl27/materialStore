@@ -9,7 +9,7 @@ In this project I bring together everything I learned with my previous projets, 
 •React Routes / Axios / Express / Node / React-Modal / Flex <br/>
 
 Main Page
-![Screenshot](materialHomePreview2.png)
+![Screenshot](previews/materialHomePreview2.png)
 
 Different Logged in Users
 ![Screenshot](materialDifferentUsersPreview.png)
