@@ -17,7 +17,7 @@ export const ItemInput = () => {
             price: itemPrice,
             description: itemDescription,
             image: itemImage,
-            date: `${date.getDate()}/${date.getUTCMonth()}/${date.getFullYear()}`,
+            date: `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}`,
             seller: `${localStorage.getItem("firstName")} ${localStorage.getItem("lastName")}`
         }
         )
@@ -27,11 +27,11 @@ export const ItemInput = () => {
     return (
         <>
             <div className='input-card' >
-                <h3 className='title'>Add a new item to the store here!</h3>
+                {/* <h3 className='title'>Add a new item to the store here!</h3> */}
                 <div className='inputs'>
 
                     <label>Name</label>
-                    <input type='text' placeholder="Ex.Keyboard" onChange={ (event) => {
+                    <input type='text' placeholder="Keyboard" onChange={ (event) => {
                         setItemName(event.target.value)
                         console.log(itemName)
                     }}> 
@@ -40,7 +40,7 @@ export const ItemInput = () => {
                     <label>Price</label>
                     <input
                         type='number'
-                        placeholder="Ex.$9.99"
+                        placeholder="$9.99"
                         onChange={ (event) => {
                             setItemPrice(event.target.value)
                             console.log(itemPrice)
@@ -50,24 +50,25 @@ export const ItemInput = () => {
                     <label>Description</label>
                     <input
                         type='text'
-                        placeholder="Ex.it has dem gud KEYS"
+                        placeholder="Wireless Keyboard"
                         onChange={ (event) => {
                             setItemDescription(event.target.value)
                             console.log(itemDescription)
                         }}
+                        maxLength='200'
                         >
                     </input>
                     <label>Image Url</label>
                     <input
                         type='text'
-                        placeholder="Ex.coolimage/apple.jpg"
+                        placeholder="items/keyboard.jpg"
                         onChange={ (event) => {
                             setItemImage(event.target.value)
                             console.log(itemImage)
                         }}
                         >
                     </input>
-                    <button onClick={createNewItem} >Add</button>
+                    <button className='add-item' onClick={createNewItem} >Add</button>
 
                 </div>
             </div>
