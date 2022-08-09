@@ -10,7 +10,9 @@ In this project I bring together everything I learned with my previous projets, 
 
 Main Page
 ![Screenshot](materialHomePreview2.png)
-![Screenshot](materialHomePreview1.png)
 
-![Screenshot](previewModal.png)
-![Screenshot](previewSearch.png)
+Different Logged in Users
+![Screenshot](materialDifferentUsersPreview.png)
+
+DataBase
+![Screenshot](dataBaseMaterialStore.png)
